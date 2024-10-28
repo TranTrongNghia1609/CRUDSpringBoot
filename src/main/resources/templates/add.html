@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<h2><!-- Condition to toggle between 'Edit category' or 'Add New Category' -->
+  Add New Category
+</h2>
+
+<form action="/admin/categories/save" method="post">
+    <label>Category Name:</label><br>
+    <input type="text" name="name" value="${category.name}"><br>
+
+    <label>Images:</label><br>
+    <input type="text" name="images" value="${category.images}"><br>
+
+    <label>Status:</label><br>
+    <input type="text" name="status" value="${category.status}"><br>
+
+    <br><input type="submit" value="Submit">
+</form>
